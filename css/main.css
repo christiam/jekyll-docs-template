@@ -77,3 +77,69 @@ body.rtl .row-fluid [class*="span"]:first-child {
 body.rtl ul, body.rtl ol {
     margin: 0 25px 10px 0;
 }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 1.375em;
+    font-size: 0.875em;
+}
+
+.table-code code {
+    background-color: #ffffff;
+    border: 1px solid #e3e4e5;
+    border-radius: 0.250em;
+    overflow-x: auto;
+    padding: 0.125em 0.250em;
+    white-space: pre-wrap;
+}
+
+th {
+    text-align: left;
+    font-family: "Avenir Next Demi", Arial, sans-serif;
+    /*background-color: #dbedd4;*/
+    background-color: #a2e4ee;
+}
+
+tr, th, td {
+    padding: 10px 15px;
+    line-height: 1.5em;
+}
+
+td:code {
+    background-color: transparent;
+    white-space: nowrap;
+}
+
+tr:nth-child(even) {
+    background-color: #F1F2F2;
+}
+
+tr:nth-child(odd) {
+    background-color: #F8F8F8;
+}
+
+table.fullwidth tr:nth-child(odd) {
+    background-color: transparent;
+}
+
+table.fullwidth tr:nth-child(even) {
+    background-color: transparent;
+}
+
+.field-table td:nth-child(1) {
+}
+
+.field-table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.field-table code {
+    background-color: #ffffff;
+    border: 1px solid #e3e4e5;
+    border-radius: 0.250em;
+    overflow-x: auto;
+    padding: 0.125em 0.250em;
+    white-space: nowrap;
+}
